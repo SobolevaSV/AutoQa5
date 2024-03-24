@@ -30,6 +30,6 @@ public class CardDeliveryTest {
         $("[data-test-id=agreement]").click();
         $("button.button_view_extra.button_size_m.button_theme_alfa-on-white").click();
         $(".notification__title").shouldBe(visible, Duration.ofSeconds(15));
-        $(".notification__content").shouldHave(text("Встреча успешно забронирована на "), text(date)).shouldBe(visible, Duration.ofSeconds(15));
+        $(".notification__content").shouldHave(text("Встреча забронирована на "), text(date)).shouldBe(visible, Duration.ofSeconds(15));
     }
 }
